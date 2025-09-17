@@ -1,0 +1,154 @@
+/* 基本樣式重置與設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 頁首樣式 */
+header {
+    background: url(tainan-skyline.png) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* 主要內容區域 */
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 景點卡片網格 */
+.attraction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 卡片樣式 */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #c1673c;
+}
+
+.card-content p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* 交通資訊區塊樣式 */
+.transport-info {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.transport-info h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.transport-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    padding-bottom: 0.75rem;
+}
+
+.transport-info a {
+    display: inline-block;
+    background-color: #c1673c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.transport-info a:hover {
+    background-color: #a5542f;
+}
+
+/* Video Section */
+.video-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #c1673c;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 頁尾樣式 */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fdfaf6;
+    margin-top: 2rem;
+}
